@@ -1,6 +1,6 @@
 import sys
-import add
-import mul
+from add import add
+from mul import mul
 
 def calc(o,a,b):
    if o==0:
