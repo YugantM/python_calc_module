@@ -10,8 +10,12 @@ def calc(o,a,b):
       print(mul.mul(a,b))
       return mul.mul(a,b)
 
+def main()
+      if len(sys.argv) == 4:
+          calc(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
+      else:
+          print("ERROR:",str(len(sys.argv)-1)," arguments given instead of 3")
+
+
 if __name__ == "__main__":
-    if len(sys.argv) == 4:
-        calc(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
-    else:
-        print("ERROR:",str(len(sys.argv)-1)," arguments given instead of 3")
+  main()
