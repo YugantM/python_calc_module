@@ -4,13 +4,18 @@ setup(
   packages = ['calc'],   
   version = '1.0',      
   license='MIT',        
-  description = 'This package returns calctiplication of two integers.',   
+  description = 'This package returns addition or multiplication of two integers.',   
   url = 'https://github.com/YugantM/python_calc_module',   
   download_url = 'https://github.com/YugantM/python_calc_module.git',  
   install_requires=[
           'add',
-	  'mul'
+          'mul'
       ],  
+  entry_points = {
+              'console_scripts': ['calc = calc.__main__:main',],
+              },
+  scripts=['scripts/calc'],  
+  
   keywords = ['add','multiplication', 'calculation'],  
   
   classifiers=[

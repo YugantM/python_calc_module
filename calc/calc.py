@@ -1,14 +1,14 @@
 import sys
-import add
-import mul
+from add import add
+from mul import mul
 
 def calc(o,a,b):
    if o==0:
       print(add.add(a,b))
       return add.add(a,b)
    if o==1:
-      print(mum(a,b))
-      return mul(a,b)
+      print(mul.mul(a,b))
+      return mul.mul(a,b)
 
 if __name__ == "__main__":
     if len(sys.argv) == 4:

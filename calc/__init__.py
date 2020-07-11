@@ -1,1 +1,1 @@
-import calc
+"the calc module"
