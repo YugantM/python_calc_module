@@ -10,7 +10,7 @@ def calc(o,a,b):
       print(mul.mul(a,b))
       return mul.mul(a,b)
 
-def main()
+def main():
       if len(sys.argv) == 4:
           calc(int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]))
       else:
